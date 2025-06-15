@@ -1,9 +1,12 @@
-import UserList from "./components/UserList"
+import Person from "./components/Person"
+import Product from "./components/Product"
 
 const App = () => {
   return (
     <div>
-         <UserList/>
+         <Person name="John" age={12}/>
+         <Product name="Laptop" price={999.99}/>
+
     </div>
     
   )

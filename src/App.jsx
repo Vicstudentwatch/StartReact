@@ -1,13 +1,13 @@
-import Greeting from "./components/Greeting"
-import UserStatus from "./components/UserStatus"
-import Weather from "./components/Weather"
+import IconComponent from "./components/IconComponent"
+import ProfileCard from "./components/ProfileCard"
+import StyledCard from "./components/StyledCard"
 
 const App = () => {
   return (
     <div>
-      <UserStatus isLoggedIn={true} isAdmin={true}/>
-      <Greeting timeOfDay='morning'/>
-      <Weather temp={15}/>  
+      <StyledCard/>
+      <ProfileCard/>
+      <IconComponent/>
     </div>
     
   )

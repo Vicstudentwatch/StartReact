@@ -1,16 +1,16 @@
-import ComponentOne from "./components/ComponentOne"
-import ComponentTwo from "./components/ComponentTwo"
 import { useState } from "react"
+import Counter from "./components/Counter"
+import TodoList from "./components/TodoList"
+import Profile from "./components/Profile"
+import ShoppingList from "./components/ShoppingList"
 
 const App = () => {
-  const [count, setCount] = useState(0)
-  const countIncreament = () => {
-    setCount(count + 1)
-  }
   return (
     <div>
-      <ComponentOne count={count}/>
-      <ComponentTwo countIncreament ={countIncreament}/>
+      <Counter/>
+      <TodoList/>
+      <Profile/>
+      <ShoppingList/>
     </div>
     
   )

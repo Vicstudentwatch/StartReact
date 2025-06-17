@@ -1,13 +1,9 @@
-import IconComponent from "./components/IconComponent"
-import ProfileCard from "./components/ProfileCard"
-import StyledCard from "./components/StyledCard"
+import ToDo from "./components/ToDo"
 
 const App = () => {
   return (
     <div>
-      <StyledCard/>
-      <ProfileCard/>
-      <IconComponent/>
+      <ToDo/>
     </div>
     
   )

@@ -1,11 +1,11 @@
-import Counter from "./components/Counter"
-import FormProf from "./components/FormProf"
+import BasicEffect from "./components/BasicEffect"
+import CounterEffect from "./components/CounterEffect"
 
 const App = () => {
   return (
     <div>
-      {/* <FormProf/> */}
-      <Counter/>
+      <BasicEffect/>
+      <CounterEffect/>
     </div>
     
   )

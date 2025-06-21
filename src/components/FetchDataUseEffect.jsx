@@ -1,11 +1,11 @@
 import { useEffect,useState } from "react"
 
 const FetchDataUseEffect = () => {
-    useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(data => setPosts(data))
-    .catch(err=> console.error("Error fetching data:"))
+    useEffect( async () => {
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+        const data = await res.json()
+        setPosts(data)
+    
 },[])
     const [posts, setPosts] = useState([])
   return (

@@ -1,16 +1,9 @@
-import UpdateProfile from "./components/UpdateProfile"
-import UserProvider from "./components/UserContext"
-import UserProfile from "./components/UserProfile"
-
-
+import CounterReducer from "./components/CounterReducer"
 
 const App = () => {
   return (
     <div>
-      <UserProvider>
-        <UserProfile/>
-        <UpdateProfile/>
-      </UserProvider>
+      <CounterReducer/>
     </div>
     
   )

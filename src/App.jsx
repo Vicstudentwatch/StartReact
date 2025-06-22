@@ -1,13 +1,16 @@
-import BasicEffect from "./components/BasicEffect"
-import CounterEffect from "./components/CounterEffect"
-import FetchDataUseEffect from "./components/FetchDataUseEffect"
+import UpdateProfile from "./components/UpdateProfile"
+import UserProvider from "./components/UserContext"
+import UserProfile from "./components/UserProfile"
+
+
 
 const App = () => {
   return (
     <div>
-      {/* <BasicEffect/>
-      <CounterEffect/> */}
-      <FetchDataUseEffect/>
+      <UserProvider>
+        <UserProfile/>
+        <UpdateProfile/>
+      </UserProvider>
     </div>
     
   )
